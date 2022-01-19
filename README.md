@@ -30,5 +30,5 @@ The above commands are sent just once upon device initialization in WinLirc (whi
 
 * make sure you run lircd together with either irw running in the background or irexec (so that we make sure lirc never command the irtoy/irdroid to exit/enter sampling mode)
 
-For those of you who can't or dont want to compile the irtoy driver, you can use the x86_64 binary (MD5 hash - 059a85b7f167d34d85ec93be791b6868 ) attached below. locate and overwrite the irtoy.so file on your system (x86_64) with the attached file.
+For those of you who can't or dont want to compile the irtoy driver, you can use the x86_64 binary (MD5 hash - 059a85b7f167d34d85ec93be791b6868 ) - It can be downloaded from this repository (see files above). locate and overwrite the irtoy.so file on your system (x86_64) with the attached file.
 * for Ubuntu , the file location is  /usr/lib/x86_64-linux-gnu/lirc/plugins/
