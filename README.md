@@ -20,7 +20,7 @@ the driver / plugin responsible for communicating with Irtoy / Irdroid.
 
 The above commands are sent just once upon device initialization in WinLirc (which is not the case in LIRC where these commands are sent each time a ir transmission is made)which sometimes makes the device to lock and deenumerate.
 
-The solution is a patch for LIRC, that makes the plugin to properly send the above initialization commands with the required timing.
+# The SOLUTION is a patch for LIRC, that makes the plugin to properly send the above initialization commands with the required timing.
 
 1. Clone LIRC from git -  git clone git://git.code.sf.net/p/lirc/git lirc
 2. cd into lirc/plugins
