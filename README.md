@@ -1,6 +1,6 @@
 ## The built in driver for Irtoy / Irdroid in LIRC has a bug that makes the modules to lock from time to time, which require to replug the Irdroy/Irdroid and restart LIRC
 
-# Description of the issue:
+# Description of the problem:
 
 When the device is transmitting via irsend in a loop (tested with different delays between transmit from 500ms to 2 seconds), and a signal from another IR source such as another remote control is received by the IR receiver the device “hangs” de-enumerates from the usb bus and a replug is needed to start functioning again. This issue sometimes happen even when not transmitting in a loop, but when the user sends ir command with lirc and at the same time pushes remote control keys on his physical remote control which leads to the same result - device de-enumeration
 
