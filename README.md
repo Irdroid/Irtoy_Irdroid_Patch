@@ -13,10 +13,10 @@ the driver / plugin responsible for communicating with Irtoy / Irdroid.
 # The Following observations were made:
 
 1. Device initialization e.g, entering samling mode with "s" is sent once
-2. then before reading the result 100ms delay is added after which the result is read (obviously the device need some time to communicate back the result which is "S01")
-3. After entering sampling mod the command 0x24 is sent once, followed by 20ms delay
-4. Then the command 0x25 is sent , followed by 20ms delay
-5  And finally the 0x26 command is sent , followed by 20ms delay
+2. then before reading the result 100us delay is added after which the result is read (obviously the device need some time to communicate back the result which is "S01")
+3. After entering sampling mod the command 0x24 is sent once, followed by 20us delay
+4. Then the command 0x25 is sent , followed by 20us delay
+5  And finally the 0x26 command is sent , followed by 20us delay
 
 The above commands are sent just once upon device initialization in WinLirc (which is not the case in LIRC where these commands are sent each time a ir transmission is made)which sometimes makes the device to lock and deenumerate.
 
