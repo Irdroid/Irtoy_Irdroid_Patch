@@ -20,7 +20,7 @@
  	}
 -
 + 	//delay needed before reading the command result from Irtoy / Irdroid
-+	usleep(100);
++	usleep(100000);
  	res = read_with_timeout(dev->fd, buf,
  				IRTOY_LEN_SAMPLEMODEPROTO,
  				IRTOY_TIMEOUT_SMODE_ENTER);
@@ -37,7 +37,7 @@
 +                return 0;
 +        }
 +	 //delay needed before reading the command result from Irtoy / Irdroid
-+	usleep(20);
++	usleep(20000);
 +	// Send initialization commands once on init, separately from the transmit commands to avoid de-enumerating the device
 +	// See gist https://gist.github.com/Irdroid/384d5144d24cba7c94e58dde75388968
 +	res = write(dev->fd, IRTOY_COMMAND25, sizeof(IRTOY_COMMAND25));
@@ -47,7 +47,7 @@
 +                return 0;
 +        }
 +	 //delay needed before reading the command result from Irtoy / Irdroid
-+	usleep(20);
++	usleep(20000);
 +	// Send initialization commands once on init, separately from the transmit commands to avoid de-enumerating the device
 +	// See gist https://gist.github.com/Irdroid/384d5144d24cba7c94e58dde75388968
 +	res = write(dev->fd, IRTOY_COMMAND26, sizeof(IRTOY_COMMAND26));
@@ -57,7 +57,7 @@
 +                return 0;
 +        }
 +	//delay needed before reading the command result from Irtoy / Irdroid
-+	usleep(20);
++	usleep(20000);
  
  	buf[IRTOY_LEN_SAMPLEMODEPROTO] = 0;
  	if (buf[0] != IRTOY_REPLY_SAMPLEMODEPROTO) {
