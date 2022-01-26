@@ -26,7 +26,7 @@ The above commands are sent just once upon device initialization in WinLirc (whi
 
 1. Clone LIRC from git -  git clone git://git.code.sf.net/p/lirc/git lirc
 2. cd into lirc/plugins
-3. Download the patch wget https://gist.githubusercontent.com/Irdroid/df859ae9b7cddd8fccde879804e056da/raw/c6664b43fd493371d8f89d515f40a99c3fc69d3c/Irtoy_Irdroid_Lirc_Stability.patch
+3. Download the patch wget https://raw.githubusercontent.com/Irdroid/Irtoy_Irdroid_Patch/main/Irtoy_Irdroid_Lirc_Stability.patch
 4. Apply the patch via : patch -u irtoy.c Irtoy_Irdroid_Lirc_Stability.patch
 5. cd into lirc source main directory and run ./autogen.sh , ./configure , make and make install 
 
