@@ -1,4 +1,4 @@
-## The built in driver for Irtoy / Irdroid in LIRC has a bug that makes the modules to lock from time to time, which require to replug the Irdroy/Irdroid and restart LIRC
+# The built in driver for Irtoy / Irdroid in LIRC has a bug that makes the modules to lock from time to time, which require to replug the Irdroy/Irdroid and restart LIRC
 
 # Description of the problem:
 
